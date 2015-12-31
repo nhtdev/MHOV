@@ -1,0 +1,9 @@
+{
+  "name": "MHOV",
+  "description": "Mountyhall Open View",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-ftpscript": "~0.1.7"
+  }
+}
