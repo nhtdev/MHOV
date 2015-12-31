@@ -1,0 +1,13 @@
+<?php include PAGE_DIR.'/_header.phtml'; ?>
+
+<?php if (isset($data['view'])): ?>
+	<?php echo $data['renderer']->render($data['view']); ?>
+<?php else: ?>
+	<form method="post" action="">
+		<label for="view">Copier/coller la vue ici :</label>
+		<textarea rows="10" cols="60" name="view" id="view"></textarea>
+		<button type="submit">Envoyer</button>
+	</form>
+<?php endif; ?>
+
+<?php include PAGE_DIR.'/_footer.phtml'; ?>

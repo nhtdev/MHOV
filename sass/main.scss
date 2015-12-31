@@ -1,0 +1,72 @@
+$border-color: #666;
+$color-monstre: #dd2222;
+$color-troll: #2222dd;
+$color-tresor: #666;
+$color-champignon: #bf00ff;
+$color-lieu: #df7401;
+$color-cenotaphe: #000;
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+
+	font-size: 11px;
+
+	td {
+		border: 1px solid $border-color;
+		padding: 2px 3px;
+		
+		white-space: nowrap;
+		
+		.n::after {
+			content: ":";
+		}
+		.num {
+			display: none;
+		}
+		
+		.cat-monstre {
+			color: $color-monstre;
+		}
+		.cat-tresor {
+			color: $color-tresor;
+		}
+		.cat-champignon {
+			color: $color-champignon;
+		}
+		.cat-lieu {
+			color: $color-lieu;
+		}
+		.cat-cenotaphe {
+			color: $color-cenotaphe;
+		}
+		
+		.cat-troll {
+			color: $color-troll;
+			.race, .guilde {
+				display: none;
+			}
+			&.race-skrim .niveau::before {
+				content: "S";
+			}
+			&.race-tomawak .niveau::before {
+				content: "T";
+			}
+			&.race-kastar .niveau::before {
+				content: "K";
+			}
+			&.race-durakuir .niveau::before {
+				content: "D";
+			}
+			&.race-darkling .niveau::before {
+				content: "Da";
+			}
+			&.race-nkrwapu .niveau::before {
+				content: "N";
+			}
+		}
+		
+		
+	}
+	
+}

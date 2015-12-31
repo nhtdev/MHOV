@@ -1,0 +1,40 @@
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  font-size: 11px; }
+  table td {
+    border: 1px solid #666;
+    padding: 2px 3px;
+    white-space: nowrap; }
+    table td .n::after {
+      content: ":"; }
+    table td .num {
+      display: none; }
+    table td .cat-monstre {
+      color: #dd2222; }
+    table td .cat-tresor {
+      color: #666; }
+    table td .cat-champignon {
+      color: #bf00ff; }
+    table td .cat-lieu {
+      color: #df7401; }
+    table td .cat-cenotaphe {
+      color: #000; }
+    table td .cat-troll {
+      color: #2222dd; }
+      table td .cat-troll .race, table td .cat-troll .guilde {
+        display: none; }
+      table td .cat-troll.race-skrim .niveau::before {
+        content: "S"; }
+      table td .cat-troll.race-tomawak .niveau::before {
+        content: "T"; }
+      table td .cat-troll.race-kastar .niveau::before {
+        content: "K"; }
+      table td .cat-troll.race-durakuir .niveau::before {
+        content: "D"; }
+      table td .cat-troll.race-darkling .niveau::before {
+        content: "Da"; }
+      table td .cat-troll.race-nkrwapu .niveau::before {
+        content: "N"; }
+
+/*# sourceMappingURL=main.css.map */
