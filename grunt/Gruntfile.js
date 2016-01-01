@@ -36,7 +36,7 @@ module.exports = function(grunt) {
               {
                 expand: true,
                 cwd: '../',
-                src: ['html/*', 'src/*', 'pages/*'],
+                src: ['html/**', 'src/**', 'pages/**'],
                 dest: '/www/Mountyhall/MHOV'
               }
             ]
